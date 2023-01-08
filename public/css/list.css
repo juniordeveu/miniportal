@@ -1,0 +1,13 @@
+
+span{
+    color:                rgb(30, 170, 170);
+    font-size:              2rem;
+    letter-spacing:         .2rem;
+    text-transform:         uppercase;
+}
+.card{
+    background:             linear-gradient(-20deg, rgb(166, 216, 245) 0%, 35%, rgb(167, 216, 245)100%);
+    -webkit-box-shadow:     36px 26px 53px -27px rgba(66, 68, 90, 1);
+    -moz-box-shadow:        36px 26px 53px -27px rgba(66, 68, 90, 1);
+    box-shadow:             36px 26px 53px -27px rgba(66, 68, 90, 1);
+}
