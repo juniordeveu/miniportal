@@ -1,3 +1,3 @@
-# miniportal live
+# miniportal
 
-https://miniportal-gop2.onrender.com/
+## Live https://miniportal-gop2.onrender.com/
