@@ -191,7 +191,7 @@ app.post('/opinie',async(req,res)=>{
         if(err){
           console.log("Brak polaczenia z DB");
         }else{
-          res.redirect('/')
+          res.redirect('/opinie')
         }
       })
 
