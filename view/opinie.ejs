@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/opinie.css">
+    <title>Feedback</title>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+<div class="container-fluid p-4 " data-feedbackContainer >
+    <div class="row  d-flex justify-content-center">
+        <div class="col-md-10 text-white " >
+            <div class="display-3">
+                Witaj 
+                <span class="display-5">zapraszam Cię do anonimowego wypełnienia formularza . Jest to dla mnie
+                    bardzo ważne. 
+
+                </span>
+             <p class="lead">- juniordev</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container ">   
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-11  " >
+            <form action="/opinie" method="post">
+                <fieldset class="border p-4 ">
+                    <legend class="float-none text-white w-auto ">Jakość kodu</legend>
+                     
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="code" id="lowQualityID" value="Słaby">
+                            <label for="lowQualityID"  class="form-check-label mx-2">Słaby</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="code" id="alomostGoodID" value="prawie dobrze">
+                            <label for="alomostGoodID" class="form-check-label">Prawie dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="code" id="goodID" value="dobrze">
+                            <label for="goodID" class="form-check-label mx-2 ">Dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="code" id="alomstVeryWellID">
+                            <label for="alomstVeryWellID" class="form-check-label mx-2 e">Prawie bardzo dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="code" id="veryWellID" value="bardzo dobrze">
+                            <label for="veryWellID" class="form-check-label mx-2 ">Bardzo dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="code" id="perfectlyID" value="perfekcyjnie">
+                            <label for="perfectlyID" class="form-check-label mx-2">Perfekcyjnie</label>
+                            </div>
+                            <div class="w-100 p-3"></div>     
+                    <div class="col-12 mx-3">
+                            <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input " name="fileHTML" id="htmlID" value="html">
+                            <label for="htmlID" class="form-check-label">html</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input " name="fileCSS" id="cssID" value="css">
+                            <label for="cssID" class="form-check-label">.css</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input " name="fileJS" id="jsID" value="js">
+                            <label for="jsID" class="form-check-label">.js</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input"  name="fileNODE" id="nodeID" value="node.js">
+                            <label for="nodeID" class="form-check-label">node.js</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input " name="fileBoot" id="bootID" value="bootstrap">
+                            <label for="bootID" class="form-check-label ">bootstrap 5</label>
+                            </div>
+                        </div>
+                </fieldset>
+     
+                <fieldset class="border p-4">
+                    <legend class="float-none text-white w-auto p-2">Wykonanie </legend>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="codeUX" id="lowQualityID" value="Słaby">
+                            <label for="lowQualityID"  class="form-check-label mx-2">Słaby</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="codeUX" id="alomostGoodID" value="prawie dobrze">
+                            <label for="alomostGoodID" class="form-check-label">Prawie dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="codeUX" id="goodID" value="dobrze">
+                            <label for="goodID" class="form-check-label mx-2 ">Dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="codeUX" id="alomstVeryWellID">
+                            <label for="alomstVeryWellID" class="form-check-label mx-2 e">Prawie bardzo dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="codeUX" id="veryWellID" value="bardzo dobrze">
+                            <label for="veryWellID" class="form-check-label mx-2 ">Bardzo dobrze</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="codeUX" id="perfectlyID" value="perfekcyjnie">
+                            <label for="perfectlyID" class="form-check-label mx-2">Perfekcyjnie</label>
+                            </div>
+
+                </fieldset>
+                <fieldset class="border p-4">
+                    <legend class="float-none text-white w-auto p-2">Uwagi </legend>
+                    <label for="textarea" class="form-label"></label>
+                    <textarea class="form-control" name="areaOpinions" id="textarea" rows="7"></textarea>
+                </fieldset>
+
+                <div class="col-12 my-5 text-center">
+                    <button type="submit" class="btn btn-primary">Zapisz opine</button>
+                </div>
+
+            </form>
+        </div><!-- col -->
+    </div><!-- row -->
+</div><!-- contaiener -->
+<div class="container-fluid" data-opinions>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10  ">
+            <% for (var i =0; i <=opinions.length-1;  i++ ) { %>
+                <div class="card w-100 mt-4 p-0 mx-4 " data-myCard>
+                    <div class="card-header">
+                        <h4> Użytkownik <span class="user"><%= opinions[i].id %></span> odpowiedział</h4>
+                    </div>
+                    <div class="card-body text-center">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h4 class="card-title">Jakość kodu ?</h4>
+                            <p class="lead card-text"><%= opinions[i].code %></p>
+                            <p class=" lead card-text">Dotyczy</p>
+                            <%if (opinions[i].filehtml == 'undefined') { %>
+                                <span class="lead"></span>
+                                <%} else { %>
+                                    <span class="lead">
+                                        <b><%= opinions[i].filehtml %></b>
+                                    </span>
+                                <%}%>
+                            <%if (opinions[i].filecss == 'undefined') { %>
+                                <span class="lead"></span>
+                                <%} else { %>
+                                    <span class="lead">
+                                       <b> <%= opinions[i].filecss %></b>
+                                    </span>
+                                <%}%>
+                            <%if (opinions[i].filejs == 'undefined') { %>
+                                <span class="lead"></span>
+                                <%} else { %>
+                                    <span class="lead">
+                                        <b><%= opinions[i].filejs %></b>
+                                    </span>
+                                <%}%>
+                            <%if (opinions[i].filenode == 'undefined') { %>
+                                <span class="lead"></span>
+                                <%} else { %>
+                                    <span class="lead">
+                                       <b><%= opinions[i].node %></b>
+                                    </span>
+                                <%}%>
+                            <%if (opinions[i].fileboot == 'undefined') { %>
+                                <span class="lead"></span>
+                                <%} else { %>
+                                    <span class="lead">
+                                        <b><%= opinions[i].fileboot %></b>
+                                    </span>
+                                <%}%>
+                      
+                                
+                                
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="card-title">Jakość wykonania </h4>
+                            <p class="card-text"><%= opinions[i].codeux %></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="card-title">Uwagi , sugestie </h4>
+                            <p class="card-text"><%= opinions[i].areaopinions %></p>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+             <% } %>
+        </div>  
+    </div>
+</div>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

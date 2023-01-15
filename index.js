@@ -64,6 +64,10 @@ app.get('/logout', function(req, res, next) {
   });
 });
 
+/* app.get('/opinie',(req,res)=>{
+  res.render('opinie');
+}) */
+
 
 
 /* display post  */
@@ -76,6 +80,22 @@ app.get('/list',async (req,res)=>{
           //console.log()
         }
         return res.render('list',{post : results.rows})
+        });
+  }catch{
+    console.log("err")
+  }
+    
+})
+app.get('/opinie',async (req,res)=>{
+  try{
+    await pool.query(`	SELECT id, code, codeUX,fileHTML,fileCSS,fileJS,fileNODE,fileBoot,areaOpinions FROM opinions ORDER BY id; `,
+      (err, results) => {
+        if (err) {
+          throw err;
+          console.log("erro get opinie")
+        }
+        console.log(results.rows)
+        return res.render('opinie',{opinions : results.rows})
         });
   }catch{
     console.log("err")
@@ -160,6 +180,26 @@ await  pool.query(
   }
 })
 /* end send queston  */
+
+app.post('/opinie',async(req,res)=>{
+  try{
+    let {code,codeUX,fileHTML,fileCSS,fileJS,fileNODE,fileBoot,areaOpinions} =req.body;
+    await pool.query(
+      `insert into opinions(code, codeUX, fileHTMl,fileCSS,fileJS,fileNODE,fileBoot,areaOpinions)
+      values ('${code}','${codeUX}','${fileHTML}','${fileCSS}','${fileJS}','${fileNODE}','${fileBoot}','${areaOpinions}')`,
+      (err,result)=>{
+        if(err){
+          console.log("Brak polaczenia z DB");
+        }else{
+          res.redirect('/')
+        }
+      })
+
+  }catch{
+    console.log("err brak polaczenia z db")
+    res.redirect('/opinie')
+  }
+})
 
 app.post('/log',passport.authenticate('local',{
 successRedirect:'/panel',

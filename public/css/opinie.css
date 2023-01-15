@@ -1,0 +1,50 @@
+:root{
+    font-size:      20px;
+}
+/* _______________________________ */
+
+body{
+    background: rgb(8,26,46);
+    background: linear-gradient(135deg, rgba(8,26,46,1) 22%, rgba(35,44,64,1) 35%, rgba(66,64,84,1) 49%,
+                                         rgba(79,69,88,1) 54%, rgba(218,118,133,1) 78%, rgba(224,184,208,1) 95%);
+}
+
+/* header */
+.display-3::first-letter{
+color:      #ffd9b8;
+}
+.display-3 , .display-5{
+    letter-spacing:      .2rem;
+}
+[data-feedbackContainer]{
+
+    height:         auto;
+    margin:         5em 0 10em 0;
+}
+
+/* Form */
+fieldset legend{
+    letter-spacing:         .5rem;
+    font-weight:            100;
+}
+fieldset label{
+color:             #e2cbd0;
+letter-spacing:     .1rem;
+}
+
+
+
+/* opinions */
+[data-myCard]{
+background-color: #714E7A;
+-webkit-box-shadow: -4px 1px 13px -3px rgba(66, 68, 90, 1);
+-moz-box-shadow: -4px 1px 13px -3px rgba(66, 68, 90, 1);
+box-shadow: -4px 1px 13px -3px rgba(66, 68, 90, 1);
+opacity: .9;
+}
+[data-myCard] .list-group-item{
+background-color:        #ffd9b8;
+border-radius:           .5rem;
+margin:                 2px 0 2px 0;
+opacity:                 .9;
+}
